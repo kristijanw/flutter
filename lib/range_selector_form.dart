@@ -12,7 +12,6 @@ class RangeSelectorForm extends StatelessWidget {
   }) : super(key: key);
 
   final GlobalKey<FormState> formKey;
-
   final IntValueSetter minValueSetter;
   final IntValueSetter maxValueSetter;
 
