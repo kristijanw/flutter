@@ -19,7 +19,7 @@ class _RangeSelectorPageState extends State<RangeSelectorPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Select Range'),
+        title: const Text('Select Range'),
       ),
       body: RangeSelectorForm(
         formKey: formKey,
@@ -27,7 +27,7 @@ class _RangeSelectorPageState extends State<RangeSelectorPage> {
         maxValueSetter: (value) => _max = value,
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.arrow_forward),
+        child: const Icon(Icons.arrow_forward),
         onPressed: () {
           if(formKey.currentState?.validate() == true){
             formKey.currentState?.save();

@@ -28,7 +28,7 @@ class RangeSelectorForm extends StatelessWidget {
               labelText: 'Minimum',
               intValueSetter: minValueSetter,
             ),
-            SizedBox(height: 12),
+            const SizedBox(height: 12),
             RangeSelectorTextFormField(
               labelText: 'Maximum',
               intValueSetter: maxValueSetter,
@@ -54,10 +54,10 @@ class RangeSelectorTextFormField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       decoration: InputDecoration(
-        border: OutlineInputBorder(),
+        border: const OutlineInputBorder(),
         labelText: labelText,
       ),
-      keyboardType: TextInputType.numberWithOptions(
+      keyboardType: const TextInputType.numberWithOptions(
         decimal: false,
         signed: true,
       ),

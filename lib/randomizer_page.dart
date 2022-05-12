@@ -23,18 +23,18 @@ class _RandomizerPageState extends State<RandomizerPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Randomizer'),
+        title: const Text('Randomizer'),
       ),
       body: Center(
         child: Text(
           _generatedNumber?.toString() ?? 'Generate a number',
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 30,
           ),
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
-        label: Text('generate'),
+        label: const Text('generate'),
         onPressed: () {
           setState(() {
             _generatedNumber = widget.min + randomGenerator.nextInt(widget.max + 1 - widget.min);
